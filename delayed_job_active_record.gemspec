@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.test_files        = Dir.glob('spec/**/*')
 
   s.add_runtime_dependency     'activerecord', '4.0.0.beta'
-  s.add_runtime_dependency     'delayed_job',  '4.0.0.beta'
+  s.add_runtime_dependency     'delayed_job',  '4.0.0'
 
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'
