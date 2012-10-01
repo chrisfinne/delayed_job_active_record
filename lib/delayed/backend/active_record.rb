@@ -14,7 +14,7 @@ module Delayed
         before_save :set_default_run_at
 
         def self.rails3?
-          ::ActiveRecord::VERSION::MAJOR == 3
+          ::ActiveRecord::VERSION::MAJOR >= 3
         end
 
         delayed_job_table_name = "#{::ActiveRecord::Base.table_name_prefix}delayed_jobs"
